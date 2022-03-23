@@ -15,11 +15,10 @@ var informacion = new Vue({
 var pintura = new Vue({ 
     el: '#pintura',
     data: {
-        selected: 'C:/Users/kenya/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/8vo semestre/Desarrollo de aplicaciones web/P1_DesWeb/1.jpeg"',
         options: [
-            {text: '3 pinturas', value: "C:/Users/kenya/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/8vo semestre/Desarrollo de aplicaciones web/P1_DesWeb/1.jpeg"},
-            {text: 'Cuquito', value: "C:/Users/kenya/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/8vo semestre/Desarrollo de aplicaciones web/P1_DesWeb/2.jpeg"},
-            {text: 'Mar', value: "C:/Users/kenya/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/8vo semestre/Desarrollo de aplicaciones web/P1_DesWeb/3.jpeg"}
+            {text: '3 pinturas'},
+            {text: 'Cuquito'},
+            {text: 'Mar'}
         ]
       }
 });
