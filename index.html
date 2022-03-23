@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mis pasatiempos</title> 
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+
+
+    <body>
+        <div id="Inicio">
+            <h1>Mis pasatiempos</h1>
+            <p>¡Bienvenidos! Haz click en el boton de información para descubrir mi nombre y matrícula</p>
+
+        </div>
+        
+        <!--V-IF-->
+        <div id="informacion">
+            <h1>Mi informacion</h1>
+            <button class="btn btn-primary" @click="show = !show">Información</button>
+            <p v-if="show">Alumna: {{ nombre }} Matrícula: {{matricula}}</p>
+            
+        </div>
+
+        <!--V-MODEL-->
+        <div id="pintura">
+            <h1>Pintura</h1>
+            <select v-model="selected">
+                <option v-for="option in options" v-bind:value="option.value">
+                    {{ option.text }}
+                  </option>
+                </select>
+                <span>Selected: {{ selected }}</span>
+                <!--<img style="width:500px;" v-bind:src="option.value">+--->
+
+
+        </div>
+
+        <!--V-FOR-->
+        <div id="ejercicio">
+            <h1>Gimnasio</h1>
+            <li v-for="msg in bucl">
+                {{ msg.message }}
+            </li>
+        </div>
+
+        <!--V-ON-->
+        <div id="vanttec">
+            <h1>VantTec</h1>
+            <p>Es el equipo de vehículos autónomos del tec </p>
+            <button v-on:click="vanttec('vision')">¿Qué hago en el equipo?</button>
+        </div>
+
+
+        
+        <script src="index.js"></script>
+        
+        
+    </body>
+
+</html>
